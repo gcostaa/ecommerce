@@ -190,6 +190,8 @@ class Tpl {
         if (!file_exists($templateFilepath)) {
             $e = new Tpl\NotFoundException('Template ' . $templateName . ' not found!');
             throw $e->templateFile($templateFilepath);
+
+            
         }
 
         // Compile the template if the original has been updated
